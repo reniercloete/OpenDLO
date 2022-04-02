@@ -54,8 +54,8 @@ int main()
 	CDomain Domain;
 
 	Domain.AddBoundaryPoint( { 0.0, 0.0 }, eEdgeType::FIXED );
-	Domain.AddBoundaryPoint( { 2.0, 0.0 }, eEdgeType::FIXED );
-	Domain.AddBoundaryPoint( { 2.0, 1.0 }, eEdgeType::FIXED );
+	Domain.AddBoundaryPoint( { 1.0, 0.0 }, eEdgeType::FIXED );
+	Domain.AddBoundaryPoint( { 1.0, 1.0 }, eEdgeType::FIXED );
 	Domain.AddBoundaryPoint( { 0.0, 1.0 }, eEdgeType::FIXED );
 	
 	Domain.Discretize( 0.25 );

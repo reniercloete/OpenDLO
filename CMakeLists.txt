@@ -96,10 +96,10 @@ target_link_libraries(OpenDLOTest optimized ${DLO_GLFW_DIR}/build/src/Release/gl
 target_link_libraries(OpenDLOTest optimized OpenDLOLib)
 target_link_libraries(OpenDLOTest optimized ${DLO_COIN_OR_DIR}/Clp/MSVisualStudio/v10/x64-v143-Release/libClp.lib)
 target_link_libraries(OpenDLOTest optimized ${DLO_COIN_OR_DIR}/Clp/MSVisualStudio/v10/x64-v143-Release/libCoinUtils.lib)
-target_link_libraries(OpenDLOTest debug ${DLO_MKL_DIR}/mkl/latest/lib/intel64/mkl_intel_lp64.lib)
-target_link_libraries(OpenDLOTest debug ${DLO_MKL_DIR}/mkl/latest/lib/intel64/mkl_intel_thread.lib)
-target_link_libraries(OpenDLOTest debug ${DLO_MKL_DIR}/mkl/latest/lib/intel64/mkl_core.lib)
-target_link_libraries(OpenDLOTest debug ${DLO_MKL_DIR}/compiler/latest/windows/compiler/lib/intel64_win/libiomp5md.lib)
+target_link_libraries(OpenDLOTest optimized ${DLO_MKL_DIR}/mkl/latest/lib/intel64/mkl_intel_lp64.lib)
+target_link_libraries(OpenDLOTest optimized ${DLO_MKL_DIR}/mkl/latest/lib/intel64/mkl_intel_thread.lib)
+target_link_libraries(OpenDLOTest optimized ${DLO_MKL_DIR}/mkl/latest/lib/intel64/mkl_core.lib)
+target_link_libraries(OpenDLOTest optimized ${DLO_MKL_DIR}/compiler/latest/windows/compiler/lib/intel64_win/libiomp5md.lib)
 
 
 
