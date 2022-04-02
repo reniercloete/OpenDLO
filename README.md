@@ -7,7 +7,7 @@ Open Discontinuity Layout Optimisation - C++ static library.
 ## Introduction
 OpenDLO is C++ implementation of discontinuity layout optimisation (DLO) and can be used to estimate the ultimate load carrying capacity of plates subjected to arbitrary out-of-plane loads.  The library currently only supports convex outlines without openings, fixed, free and simply supported edges as well as uniformly distributed loads.  Planned work includes arbitrary outlines with openings, internal supports, point loads and line loads.
 
-OpenDLO may form the basis of software for designing structural steel connections, concrete slabs and masonry wall panels.
+OpenDLO could form the basis of software for designing structural steel connections, concrete slabs and masonry wall panels.
 
 ## Requirements
 OpenDLO can make use of either the [Coin-OR Linear Programming (CLP) library](https://www.coin-or.org/Tarballs/Clp/Clp-1.17.6.zip) or [Mosek](https://www.mosek.com/).  Mosek is not open source, but trial and academic licences are available.  OpenDLO uses a version of CLP that is accelerated with Intel MKL.  The test application makes use of [GLFW](https://www.glfw.org/).
