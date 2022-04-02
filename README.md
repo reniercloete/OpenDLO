@@ -15,6 +15,6 @@ OpenDLO can make use of either the [Coin-OR Linear Programming (CLP) library](ht
 
 The test application defines a 1x1 isotropic square plate with fixed edges and a unit UDL.  With a 0.25 interval discritization (4 per side) the OpenDLO calculates a load factor of 44.24( analytically exact is 42.851) and a yield line layout as shown below.
 
-(https://user-images.githubusercontent.com/95902170/161394313-699904d6-f258-4e51-a9a3-313e29a5f9c0.jpeg)
+![alt text](https://user-images.githubusercontent.com/95902170/161394313-699904d6-f258-4e51-a9a3-313e29a5f9c0.jpeg)
 
 OpenDL was implemented using: Gilbert M., He L., Smith C.C., Le C.V. Automatic yield-line analysis of slabs using discontinuity layout optimization Proc. R. Soc. A, 470 (2168) (2014), p. 20140071
