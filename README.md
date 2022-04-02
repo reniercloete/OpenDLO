@@ -1,6 +1,7 @@
 # OpenDLO
 
-Open Discontinuity Layout Optimisation - C++ static library
+Open Discontinuity Layout Optimisation - C++ static library.
+
 [Download](https://github.com/reniercloete/OpenDLO/releases/download/1.0.0/OpenDLO_1.0.0.zip) to test it.
 
 ## Introduction
