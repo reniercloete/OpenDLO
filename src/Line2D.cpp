@@ -2,6 +2,10 @@
 // Copyright (c) 2022, Renier Cloete
 // This program is released under the BSD license. See the file LICENSE.txt for details.
 
+// Intersection algorithm cargo culted from https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
+// but based on: "the 2-dimensional specialization of the 3D line intersection algorithm 
+// from the article 'Intersection of two lines in three-space' by Ronald Goldman, published in Graphics Gems, page 304."
+
 #include "Line2D.h"
 
 #include <vector>
@@ -43,15 +47,6 @@ void MakeUnique( std::vector<CVector2D>& List )
 bool Colinear( const CLine2D& la,
 			   const CLine2D& lb )
 {
-	/*CVector2D oa, ob, da, db; //origin and direction vectors
-	double sa, sb; //scalar values
-	oa = la.P1();
-	da = la.P2() - la.P1();
-	ob = lb.P1();
-	db = lb.P2() - lb.P1();
-
-	return (abs( da*db ) < EPSILON && abs( (ob - oa)*da ) < EPSILON);*/
-
 	const CVector2D& va = la.Vector();
 	const CVector2D& vb = lb.Vector();
 
@@ -132,8 +127,6 @@ void Intersect( const CLine2D& la,
 		 (0 < sb || abs( sb ) < LEPSILON) && (sb < 1 || abs( sb - 1 ) < LEPSILON) )
 	{
 		Points.push_back( oa + da * sa );
-		MakeUnique( Points );
-		return;
 	}
 
 	MakeUnique( Points );
