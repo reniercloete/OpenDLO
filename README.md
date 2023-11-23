@@ -1,5 +1,9 @@
 # OpenDLO
 
+![License](https://img.shields.io/github/license/reniercloete/OpenDLO)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/reniercloete/OpenDLO)
+![GitHub last commit](https://img.shields.io/github/last-commit/reniercloete/OpenDLO)
+
 Open Discontinuity Layout Optimisation - C++ static library.
 
 [Download the test application](https://github.com/reniercloete/OpenDLO/releases/download/1.0.0/OpenDLO_1.0.0.zip) to test it.
